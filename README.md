@@ -1,1 +1,1 @@
-Spotify Clone! 
+Spotifina is a clone of Spotify.

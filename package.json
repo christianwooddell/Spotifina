@@ -1,5 +1,5 @@
 {
-  "name": "spotify_clone",
+  "name": "spotifina",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.13.8",
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch --open --config webpack.dev.js"
+    "start": "webpack --watch --mode=development"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,16 @@
+Started GET "/" for ::1 at 2021-03-15 15:26:20 -0400
+
+ActiveRecord::NoDatabaseError - FATAL:  database "spotifina_development" does not exist:
+
+Started POST "/__better_errors/57e28e56ab9d352d/variables" for ::1 at 2021-03-15 15:26:20 -0400
+  [1m[35m (322.3ms)[0m  [1m[35mCREATE DATABASE "spotifina_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (182.7ms)[0m  [1m[35mCREATE DATABASE "spotifina_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-03-15 15:27:27 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/chrayshawn/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/chrayshawn/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.5/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 19ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
