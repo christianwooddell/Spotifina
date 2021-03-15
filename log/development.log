@@ -21,3 +21,213 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 44ms (Views: 20.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2021-03-15 18:06:29 -0400
+Processing by StaticPagesController#root as HTML
+Completed 406 Not Acceptable in 163ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::UnknownFormat - StaticPagesController#root is missing a template for this request format and variant.
+request.formats: ["text/html"]
+request.variant: []
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.:
+
+Started POST "/__better_errors/a3209200739bffe4/variables" for ::1 at 2021-03-15 18:06:29 -0400
+Started GET "/" for ::1 at 2021-03-15 18:07:12 -0400
+Processing by StaticPagesController#root as HTML
+Completed 406 Not Acceptable in 102ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::UnknownFormat - StaticPagesController#root is missing a template for this request format and variant.
+request.formats: ["text/html"]
+request.variant: []
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.:
+
+Started POST "/__better_errors/f9ec81bf04b44c6d/variables" for ::1 at 2021-03-15 18:07:13 -0400
+Started GET "/" for ::1 at 2021-03-15 18:07:13 -0400
+Processing by StaticPagesController#root as HTML
+Completed 406 Not Acceptable in 102ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::UnknownFormat - StaticPagesController#root is missing a template for this request format and variant.
+request.formats: ["text/html"]
+request.variant: []
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.:
+
+Started POST "/__better_errors/b7c4d0c84d7a0342/variables" for ::1 at 2021-03-15 18:07:13 -0400
+Started GET "/" for ::1 at 2021-03-15 18:07:14 -0400
+Processing by StaticPagesController#root as HTML
+Completed 406 Not Acceptable in 109ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::UnknownFormat - StaticPagesController#root is missing a template for this request format and variant.
+request.formats: ["text/html"]
+request.variant: []
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.:
+
+Started POST "/__better_errors/6c4136c6d0334c62/variables" for ::1 at 2021-03-15 18:07:14 -0400
+Started GET "/" for ::1 at 2021-03-15 18:08:37 -0400
+Processing by StaticPagesController#root as HTML
+Completed 406 Not Acceptable in 107ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::UnknownFormat - StaticPagesController#root is missing a template for this request format and variant.
+request.formats: ["text/html"]
+request.variant: []
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.:
+
+Started POST "/__better_errors/c63762f3366c2622/variables" for ::1 at 2021-03-15 18:08:37 -0400
+Started GET "/" for ::1 at 2021-03-15 18:08:38 -0400
+Processing by StaticPagesController#root as HTML
+Completed 406 Not Acceptable in 104ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::UnknownFormat - StaticPagesController#root is missing a template for this request format and variant.
+request.formats: ["text/html"]
+request.variant: []
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.:
+
+Started POST "/__better_errors/5b55714d998b57bd/variables" for ::1 at 2021-03-15 18:08:38 -0400
+Started GET "/" for ::1 at 2021-03-15 18:08:39 -0400
+Processing by StaticPagesController#root as HTML
+Completed 406 Not Acceptable in 104ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::UnknownFormat - StaticPagesController#root is missing a template for this request format and variant.
+request.formats: ["text/html"]
+request.variant: []
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.:
+
+Started POST "/__better_errors/0cc7fe8f17923898/variables" for ::1 at 2021-03-15 18:08:39 -0400
+Started GET "/" for ::1 at 2021-03-15 18:10:52 -0400
+
+SyntaxError - syntax error, unexpected '<'
+<main id="root"></main>
+^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: syntax error, unexpected '<'
+<main id="root"></main>
+                ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: unterminated regexp meets end of file
+<main id="root"></main>
+                       ^:
+  app/controllers/static_pages_controller.rb:1:in `'
+
+Started POST "/__better_errors/f19b35b836a6afa5/variables" for ::1 at 2021-03-15 18:10:53 -0400
+Started GET "/" for ::1 at 2021-03-15 18:10:53 -0400
+
+SyntaxError - syntax error, unexpected '<'
+<main id="root"></main>
+^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: syntax error, unexpected '<'
+<main id="root"></main>
+                ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: unterminated regexp meets end of file
+<main id="root"></main>
+                       ^:
+  app/controllers/static_pages_controller.rb:1:in `'
+
+Started POST "/__better_errors/7b29b93e54a9de8d/variables" for ::1 at 2021-03-15 18:10:54 -0400
+Started GET "/" for ::1 at 2021-03-15 18:10:54 -0400
+
+SyntaxError - syntax error, unexpected '<'
+<main id="root"></main>
+^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: syntax error, unexpected '<'
+<main id="root"></main>
+                ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: unterminated regexp meets end of file
+<main id="root"></main>
+                       ^:
+  app/controllers/static_pages_controller.rb:1:in `'
+
+Started POST "/__better_errors/96b049ec6fc2c91d/variables" for ::1 at 2021-03-15 18:10:54 -0400
+Started GET "/" for ::1 at 2021-03-15 18:10:55 -0400
+
+SyntaxError - syntax error, unexpected '<'
+<main id="root"></main>
+^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: syntax error, unexpected '<'
+<main id="root"></main>
+                ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: unterminated regexp meets end of file
+<main id="root"></main>
+                       ^:
+  app/controllers/static_pages_controller.rb:1:in `'
+
+Started POST "/__better_errors/75a8baab601eb1bd/variables" for ::1 at 2021-03-15 18:10:55 -0400
+Started GET "/" for ::1 at 2021-03-15 18:10:56 -0400
+
+SyntaxError - syntax error, unexpected '<'
+<main id="root"></main>
+^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: syntax error, unexpected '<'
+<main id="root"></main>
+                ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: unterminated regexp meets end of file
+<main id="root"></main>
+                       ^:
+  app/controllers/static_pages_controller.rb:1:in `'
+
+Started POST "/__better_errors/5b17063cdf1481eb/variables" for ::1 at 2021-03-15 18:10:57 -0400
+Started GET "/" for ::1 at 2021-03-15 18:11:00 -0400
+
+SyntaxError - syntax error, unexpected '<'
+<main id="root"></main>
+^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: syntax error, unexpected '<'
+<main id="root"></main>
+                ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: unterminated regexp meets end of file
+<main id="root"></main>
+                       ^:
+  app/controllers/static_pages_controller.rb:1:in `'
+
+Started POST "/__better_errors/06fe612ff4c5198b/variables" for ::1 at 2021-03-15 18:11:00 -0400
+Started GET "/" for ::1 at 2021-03-15 18:11:00 -0400
+
+SyntaxError - syntax error, unexpected '<'
+<main id="root"></main>
+^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: syntax error, unexpected '<'
+<main id="root"></main>
+                ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: unterminated regexp meets end of file
+<main id="root"></main>
+                       ^:
+  app/controllers/static_pages_controller.rb:1:in `'
+
+Started POST "/__better_errors/f64a795749115425/variables" for ::1 at 2021-03-15 18:11:00 -0400
+Started GET "/" for ::1 at 2021-03-15 18:11:00 -0400
+
+SyntaxError - syntax error, unexpected '<'
+<main id="root"></main>
+^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: syntax error, unexpected '<'
+<main id="root"></main>
+                ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: unterminated regexp meets end of file
+<main id="root"></main>
+                       ^:
+  app/controllers/static_pages_controller.rb:1:in `'
+
+Started POST "/__better_errors/0408b4ca834b68be/variables" for ::1 at 2021-03-15 18:11:00 -0400
+Started GET "/" for ::1 at 2021-03-15 18:11:01 -0400
+
+SyntaxError - syntax error, unexpected '<'
+<main id="root"></main>
+^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: syntax error, unexpected '<'
+<main id="root"></main>
+                ^
+/Users/chrayshawn/Documents/aA-Classwork/FullstackProject/spotifina/app/controllers/static_pages_controller.rb:1: unterminated regexp meets end of file
+<main id="root"></main>
+                       ^:
+  app/controllers/static_pages_controller.rb:1:in `'
+
+Started POST "/__better_errors/b7c53a60fe575bc2/variables" for ::1 at 2021-03-15 18:11:01 -0400
