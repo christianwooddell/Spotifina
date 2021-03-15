@@ -1,0 +1,37 @@
+{:uriI"áfile://app/assets/javascripts/bundle.js.LICENSE.txt?type=text/plain&id=c3055e7360892acdfeefc4e0ef91decd09ae1bbf55da5f02a168fdafcb0eae55:ET:load_pathI"app/assets/javascripts;T:filenameI"1app/assets/javascripts/bundle.js.LICENSE.txt;T:	nameI"bundle.js.LICENSE;T:logical_pathI"bundle.js.LICENSE.txt;T:content_typeI"text/plain;T:sourceI"/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/** @license React v0.20.1
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.1
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.1
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"4processors:type=text/plain&file_type=text/plain;TTI"?file-digest://app/assets/javascripts/bundle.js.LICENSE.txt;TTF:charsetI"
+utf-8;F:digest"%°ìræ5¥TÅ|„i—êΩê®’úµæiB§Ëf¡Ù:lengthi:dependencies_digest"%^tΩä·◊”âë,ò=Œ,1…ÜF4P˘Ë(k±{¸ D:idI"Ec3055e7360892acdfeefc4e0ef91decd09ae1bbf55da5f02a168fdafcb0eae55;F:
+mtimel+¬¿O`
