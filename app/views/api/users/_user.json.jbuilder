@@ -1,0 +1,1 @@
+json.extract! user, :id, :username, :birthday, :gender, :premium, :email
