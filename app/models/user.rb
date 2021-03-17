@@ -3,7 +3,7 @@ class User < ApplicationRecord
     validates :password, length: {minimum: 8, allow_nil: true}
     validates :email, presence: true, uniqueness: true
     validates :gender, inclusion: {in: ["Male", "Female", "Non-binary"]}
-    validates :premium, inclusion: {in: [true, false]}
+    # validates :premium, inclusion: {in: [true, false]}
     
     attr_reader :password 
 

@@ -5,19 +5,6 @@ import { signUp } from "../../actions/session_actions";
 import Signup from "./signup";
 
 
-// const mapStateToProps = state => ({
-//     errors: state.errors.session,
-//     formTitle: "GET SPOTIFINA FREE",
-//     formType: "Sign up",
-//     initialState: {
-//         email: "",
-//         password: "",
-//         username: "",
-//         birthday: "",
-//         gender: "",
-//     }
-// });
-
 const mapDispatchToProps = dispatch => ({
     processForm: formUser => dispatch(signUp(formUser)),
 });

@@ -20,4 +20,5 @@ document.addEventListener("DOMContentLoaded", () => {
     window.signup = SessionAPIUtil.signUp;
     window.login = SessionAPIUtil.login;
     window.logout = SessionAPIUtil.logout;
+    window.getState = store.getState;
 });

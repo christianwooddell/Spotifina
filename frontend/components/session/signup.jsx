@@ -27,22 +27,52 @@ class Signup extends React.Component{
     render(){
         return (
             <div className="session-form">
-                <h2>Sign up</h2>
+                <h2>GET SPOTIFINA FREE</h2>
                 <form>
                     <label>Username:
-                        <input type="text" value={this.state.username} onChange={this.handleInput("username")} />
+                        <input type="text" 
+                        value={this.state.username} 
+                        placeholder="Username" 
+                        onChange={this.handleInput("username")} />
                     </label>
                     <label>Email:
-                        <input type="text" value={this.state.email} onChange={this.handleInput("email")} />
+                        <input type="text" 
+                        value={this.state.email} 
+                        placeholder="Email" 
+                        onChange={this.handleInput("email")} />
                     </label>
                     <label>Password:
-                        <input type="password" value={this.state.password} onChange={this.handleInput("password")} />
+                        <input type="password" 
+                        value={this.state.password} 
+                        placeholder="Password" 
+                        onChange={this.handleInput("password")} />
                     </label>
-                    <label>Gender:
-                        <input type="text" value={this.state.gender} onChange={this.handleInput("gender")} />
+
+                    <label>Gender:</label>
+                    <label>
+                        <input type="radio" 
+                        value="Male" 
+                        placeholder="Gender"
+                        onChange={this.handleInput("gender")} />Male
                     </label>
+                    <label>
+                        <input type="radio" 
+                        value="Female" 
+                        placeholder="Gender"
+                        onChange={this.handleInput("gender")} />Female
+                    </label>
+                    <label>
+                        <input type="radio" 
+                        value="Non-binary" 
+                        placeholder="Gender"
+                        onChange={this.handleInput("gender")} />Non-binary
+                    </label>
+
                     <label>Birthday:
-                        <input type="text" value={this.state.birthday} onChange={this.handleInput("birthday")} />
+                        <input type="text" 
+                        value={this.state.birthday} 
+                        placeholder="Birthday"
+                        onChange={this.handleInput("birthday")} />
                     </label>
                     <button onClick={this.handleSubmit}>Sign Up</button>
                 </form>
