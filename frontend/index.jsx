@@ -7,14 +7,22 @@ import * as SessionAPIUtil from "./util/session_api_util";
 document.addEventListener("DOMContentLoaded", () => {
     const root = document.getElementById("root");
     let preLoadedState = undefined;
+    let store;
     if (window.currentUser) {
         preLoadedState = {
+            entities: {
+                users: { [window.currentUser.id]: window.currentUser }
+            },
             session: {
-                currentUser: window.currentUser
+                id: window.currentUser.id
             }
         };
+        store = configureStore(preLoadedState);
+        delete window.currentUser;
+    } else {
+        store = configureStore();
     }
-    const store = configureStore();
+    store = configureStore();
     ReactDOM.render(<Root store={store} />, root);
 
     window.signup = SessionAPIUtil.signUp;
