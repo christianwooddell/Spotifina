@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 class Signup extends React.Component{
     constructor(props) {
@@ -26,7 +28,7 @@ class Signup extends React.Component{
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.processForm(this.state)
+        this.props.signup(this.state)
             .then( () => this.props.history.push("/home")); //redirect to index once we're logged in
     }
 
@@ -101,6 +103,10 @@ class Signup extends React.Component{
                     </label>
                     <button onClick={this.handleSubmit}>Sign Up</button>
                 </form>
+
+                <p className="not-new-user">Already have an account?
+                        <Link to="/login" className="login-link">Log in.</Link>
+                </p>
             </div>
         );
     }
