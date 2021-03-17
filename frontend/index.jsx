@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Root from "./components/root";
 import configureStore from "./store/store";
-import * as APIUtil from "./util/session_api_util";
+import * as SessionAPIUtil from "./util/session_api_util";
 
 document.addEventListener("DOMContentLoaded", () => {
     const root = document.getElementById("root");
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const store = configureStore();
     ReactDOM.render(<Root store={store} />, root);
 
-    window.signup = APIUtil.postUser;
-    window.login = APIUtil.postSession;
-    window.logout = APIUtil.deleteSession;
+    window.signup = SessionAPIUtil.signUp;
+    window.login = SessionAPIUtil.login;
+    window.logout = SessionAPIUtil.logout;
 });
