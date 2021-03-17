@@ -1,9 +1,9 @@
 class Api::UsersController < ApplicationController
     def create 
-        @user = User.create(user_params)
+        @user = User.new(user_params)
         if @user.save
-            log_in!(@user)
-            render "/api/" #render homepage is user is logged in
+            login!(@user)
+            render :show #render homepage is user is logged in
         else 
             render json: ["This email is already connected to an account. Log in."] #text "log in" is link to login page
         end 

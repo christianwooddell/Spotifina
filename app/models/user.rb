@@ -1,8 +1,10 @@
 class User < ApplicationRecord
     validates :username, :birthday, :session_token, :password_digest, presence: true 
     validates :password, length: {minimum: 8, allow_nil: true}
+    validates :email, presence: true, uniqueness: true
     validates :gender, inclusion: {in: ["Male", "Female", "Non-binary"]}
     validates :premium, inclusion: {in: [true, false]}
+    
     attr_reader :password 
 
     after_initialize :ensure_session_token

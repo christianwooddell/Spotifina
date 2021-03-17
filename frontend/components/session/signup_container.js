@@ -1,9 +1,25 @@
+import React from "react";
 import { connect } from "react-redux";
-import { createNewUser } from "../../actions/session_actions";
+import { Link } from "react-router-dom";
+import { signUp } from "../../actions/session_actions";
 import Signup from "./signup";
 
+
+// const mapStateToProps = state => ({
+//     errors: state.errors.session,
+//     formTitle: "GET SPOTIFINA FREE",
+//     formType: "Sign up",
+//     initialState: {
+//         email: "",
+//         password: "",
+//         username: "",
+//         birthday: "",
+//         gender: "",
+//     }
+// });
+
 const mapDispatchToProps = dispatch => ({
-    createNewUser: formUser => dispatch(createNewUser(formUser)),
+    processForm: formUser => dispatch(signUp(formUser)),
 });
 
 export default connect(null, mapDispatchToProps)(Signup);
