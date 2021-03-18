@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const NavBar = ({ currentUser, logout }) => {
     const sessionLinks = () => (
         <nav className="login-signup">
+
             <Link to="/login">Log in.</Link>
             <Link to="/signup">Sign up.</Link>
         </nav>
