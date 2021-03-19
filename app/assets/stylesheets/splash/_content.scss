@@ -1,0 +1,29 @@
+.splash {
+            background: image-url("splash/bursts.svg");
+            background-color: rgb(41, 65, 171);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+
+
+
+    .splash-bg {
+        position: absolute;
+
+    }
+
+    .splash-container {
+        display: flax;
+        text-align: center;
+        text-decoration: none;
+        color:  #1ed760;
+
+        h1 {
+            font-size: 104px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+    }
+}
