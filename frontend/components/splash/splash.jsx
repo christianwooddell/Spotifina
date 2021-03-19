@@ -10,8 +10,8 @@ class Splash extends React.Component {
                         <div className="splash-bg"></div>
                         <div className="splash-container">
                             <h1>Listening is everything</h1>
-                            <h4>Millions of songs and podcasts. No credit card needed.</h4>
-                            <Link to="/signup">GET SPOTIFINA FREE</Link>
+                            <p>Millions of songs and podcasts. No credit card needed.</p>
+                            <a href="/#/signup">GET SPOTIFINA FREE</a>
                         </div>
                     </div>
                 </section>

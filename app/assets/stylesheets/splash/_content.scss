@@ -1,29 +1,61 @@
 .splash {
             background: image-url("splash/bursts.svg");
+            background-size: 175%;
+            background-position: 46% 4%;
             background-color: rgb(41, 65, 171);
             height: 100vh;
             display: flex;
             align-items: center;
+            flex-direction: column;
+            background-repeat: no-repeat;
+            justify-content: center;
+            overflow: hidden;
+
 
 
 
     .splash-bg {
-        position: absolute;
 
     }
 
     .splash-container {
-        display: flax;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: auto;
         text-align: center;
         text-decoration: none;
         color:  #1ed760;
 
         h1 {
-            font-size: 104px;
+            width: 800px;
+            font-size: 156px;
+            font-weight: 900;
+            box-sizing: border-box;
+            padding-bottom: 40px;
+            letter-spacing: -0.04em;
+            display: box;
+            padding: 0px 0px 0.67em;
+       
+
         }
 
-        h4 {
+        p {
+            padding-bottom: 40px;
+            display: block;
             font-size: 18px;
+            font-weight: 400;
+
         }
+        a {
+        color: #2941AB;
+        font-size: 14px;
+        padding: 16px 48px 18px;
+        margin: 16px auto 0;
+        border-radius: 500px;
+        background-color: #1ed760;
+        text-decoration: none;
+        }
+
     }
 }
