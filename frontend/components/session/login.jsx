@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpotify } from "@fortawesome/free-brands-svg-icons";
+
 
 class Login extends React.Component{
     constructor(props) {
@@ -30,6 +33,11 @@ class Login extends React.Component{
     render() {
         return (
             <div className="login-container">
+                <div className="spotifinalogo">
+                    <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
+                    <h4>Spotifina</h4>
+                </div>
+                <div>
                 <form className="login-form" onSubmit={this.handleSubmit}>
                     <label>Email address</label>
                     <input type="text"
@@ -45,6 +53,7 @@ class Login extends React.Component{
                     <h4>Don't have an account?</h4>
                     <Link to="/signup">SIGN UP FOR SPOTIFINA</Link>
                 </form>
+            </div>
             </div>
         )
     }

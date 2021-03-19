@@ -7,8 +7,7 @@
     background-color: #ffffff;
     line-height: 1.5;
     margin: 20px 0 40px;
-    padding-bottom: 130px;
-    
+    padding-bottom: 130px;    
     // label {
     //     display: flex;
     //     justify-content: center;
@@ -37,6 +36,27 @@
     p {
         font-size: 12px;
         font-weight: 100;
+    }
+
+    .bdaybox {
+        display: flex;
+        justify-content: center;
+    }
+
+    .signupbutton {
+        cursor: pointer;
+        border: 0px;
+        width: 450px;
+        font-weight: bold;
+        border-radius: 500px;
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 17px 48px;
+        background-color: rgb(29, 185, 84);
+        color: rgb(255, 255, 255);
+
     }
 
 }

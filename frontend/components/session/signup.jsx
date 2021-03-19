@@ -144,7 +144,7 @@ class Signup extends React.Component{
                     </div>
                     <p>By clicking on Sign up, you agree to Spotifina's Terms and Conditions of Use.</p>
                     <p>To learn more about how Spotifina collects, uses, shares and protects your personal data please read Spotifina's Privacy Policy.</p>
-                    <button type="submit" className="signupbutton" onClick={this.handleSubmit}>Sign Up</button>
+                    <button type="submit" className="signupbutton" onClick={this.handleSubmit}>SIGN UP</button>
                 </form>
 
                 <h4 className="not-new-user">Have an account?
