@@ -1,3 +1,49 @@
 .session-form {
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px 32px;
+    text-align: center;
+    background-color: #ffffff;
+    line-height: 1.5;
+    margin: 20px 0 40px;
+    padding-bottom: 130px;
+    
+    // label {
+    //     display: flex;
+    //     justify-content: center;
+    // }
+    
+
+    h3 {
+        text-align: center;
+        font-size: 30px;
+        margin: 40px 0px 0px;
+        margin-bottom: 40px;
+        
+    }
+
+    .littlebox {
+        width: 450px;
+        border-radius: 4px;
+        padding: 14px;
+        box-sizing: border-box;
+    }
+
+    .choiceunit {
+        font-weight: 100;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+}
+
+.spotifinalogo {
+        display: inline-flex;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: 100;
 }

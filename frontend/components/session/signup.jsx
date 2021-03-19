@@ -38,92 +38,118 @@ class Signup extends React.Component{
     render(){
         return (
             <div className="session-form">
-                <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
-                <h2>Sign up for free to start listening.</h2>
+                <div className="spotifinalogo">
+                    <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
+                    <h4>Spotifina</h4>
+                </div>
+                <h3>Sign up for free to start listening.</h3>
                 <form>
-                    <label>What's your email?
-                        <input type="text"
+                    <div className="inputbox">
+                        <div>
+                            <label>What's your email?</label>
+                        </div>
+                            <input className="littlebox" type="email"
+                                value={this.state.email}
+                                placeholder="Enter your email."
+                                onChange={this.handleInput("email")} />
+    
+                    </div>
+                    <div className="inputbox">
+                        <div>
+                            <label>Confirm your email</label>
+                        </div>
+                        <input className="littlebox" type="text"
                             value={this.state.email}
-                            placeholder="Enter your email."
-                            onChange={this.handleInput("email")} />
-                    </label>
-                    <label>Confirm your email
-                        <input type="text"
-                            value={this.state.email}
-                            placeholder="Enter your email again." />
-                    </label>
-                    <label>Create a password
-                        <input type="password"
+                            placeholder="Enter your email again." 
+                            onChange={this.handleInput("email")}/>
+                    </div>
+                    <div className="inputbox">
+                        <div>
+                            <label>Create a password</label>
+                        </div>
+                        <input className="littlebox" type="password"
                             value={this.state.password}
                             placeholder="Create a password."
                             onChange={this.handleInput("password")} />
-                    </label>
-
-                    <label>What should we call you?
-                        <input type="text" 
+                    </div>
+                    
+                    <div className="inputbox">
+                        <div>
+                            <label>What should we call you?</label>
+                        </div>
+                        <input className="littlebox" type="text" 
                         value={this.state.username} 
                         placeholder="Enter a profile name." 
                         onChange={this.handleInput("username")} />
                         <p>This appears on your profile.</p>
-                    </label>
+                    
+                    </div>
                     
            
                     <div className="dob">
-                        <label>What's your date of birth?</label>
-                        <label>Month</label>
-                        <div className="month">
-                            <select id="register-dob_month" onChange={this.handleInput("dob_month")}>
-                                <option value defaultValue>Month</option>
-                                <option value="01">January</option>
-                                <option value="02">February</option>
-                                <option value="03">March</option>
-                                <option value="04">April</option>
-                                <option value="05">May</option>
-                                <option value="06">June</option>
-                                <option value="07">July</option>
-                                <option value="08">August</option>
-                                <option value="09">September</option>
-                                <option value="10">October</option>
-                                <option value="11">November</option>
-                                <option value="12">December</option>
-                            </select>
+                        <div>
+                            <label>What's your date of birth?</label>
                         </div>
-                        <label>Day</label>
-                        <div className="register-dob_day">
-                            <input type="text" placeholder="DD" onChange={this.handleInput("dob_day")} />
-                        </div>
-                        <label>Year</label>
-                        <div className="register-dob_year">
-                            <input type="text" placeholder="YYYY" onChange={this.handleInput("dob_year")} />
+                        <div className="bdaybox">
+                            <label className="choiceunit">Month</label>
+                            <div className="month">
+                                <select id="register-dob_month" onChange={this.handleInput("dob_month")}>
+                                    <option value defaultValue>Month</option>
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </div>
+                            <label className="choiceunit">Day</label>
+                            <div className="register-dob_day">
+                                <input type="text" placeholder="DD" onChange={this.handleInput("dob_day")} />
+                            </div>
+                            <label className="choiceunit">Year</label>
+                            <div className="register-dob_year">
+                                <input type="text" placeholder="YYYY" onChange={this.handleInput("dob_year")} />
+                            </div>
                         </div>
                     </div>
-                    <label>What's your gender?</label>
-                    <label>
-                        <input type="radio"
-                            name="gender"
-                            value="Male"
-                            onChange={this.handleInput("gender")} />Male
-                    </label>
-                    <label>
-                        <input type="radio"
-                            name="gender"
-                            value="Female"
-                            onChange={this.handleInput("gender")} />Female
-                    </label>
-                    <label>
-                        <input type="radio"
-                            name="gender"
-                            value="Non-binary"
-                            onChange={this.handleInput("gender")} />Non-binary
-                    </label>
+                    <div>
+                        <label>What's your gender?</label>
+                    </div>
+                    <div className="genderchoices">
+                        <label className="choiceunit">
+                            <input type="radio"
+                                name="gender"
+                                value="Male"
+                                onChange={this.handleInput("gender")} />Male
+                        </label>
+                        <label className="choiceunit">
+                            <input type="radio"
+                                name="gender"
+                                value="Female"
+                                onChange={this.handleInput("gender")} />Female
+                        </label>
+                        <label className="choiceunit">
+                            <input type="radio"
+                                name="gender"
+                                value="Non-binary"
+                                onChange={this.handleInput("gender")} />Non-binary
+                        </label>
+                    </div>
                     <p>By clicking on Sign up, you agree to Spotifina's Terms and Conditions of Use.</p>
                     <p>To learn more about how Spotifina collects, uses, shares and protects your personal data please read Spotifina's Privacy Policy.</p>
-                    <button onClick={this.handleSubmit}>Sign Up</button>
+                    <button type="submit" className="signupbutton" onClick={this.handleSubmit}>Sign Up</button>
                 </form>
 
-                <p className="not-new-user">Already have an account?
+                <h4 className="not-new-user">Have an account?
                         <Link to="/login" className="login-link">Log in.</Link>
-                </p>
+                </h4>
 
             </div>
         );

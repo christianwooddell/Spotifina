@@ -42,6 +42,8 @@ class Login extends React.Component{
                         placeholder="Password"
                         onChange={this.handleInput("password")} />
                     <button className="btn-login">LOG IN</button>
+                    <h4>Don't have an account?</h4>
+                    <Link to="/signup">SIGN UP FOR SPOTIFINA</Link>
                 </form>
             </div>
         )
