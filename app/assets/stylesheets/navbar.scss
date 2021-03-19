@@ -1,5 +1,35 @@
 header {
     background: black;
-    color: white;
+    color: #ffffff;
+    text-decoration: none;
+
 };
 
+.login-signup {
+    background: black;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 135px;
+    margin-right: 135px;
+    padding: 15px;
+    font-family: Helvetica, Arial, sans-serif, normal
+};
+
+.header-group {
+    background: black;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 135px;
+    margin-right: 135px;
+    padding: 15px;
+    font-family: Helvetica, Arial, sans-serif, normal
+
+};
+
+#navbarlink {
+    color: #ffffff;
+}
