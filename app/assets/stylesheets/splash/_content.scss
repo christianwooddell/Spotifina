@@ -44,17 +44,21 @@
             padding-bottom: 40px;
             display: block;
             font-size: 18px;
-            font-weight: 400;
+            font-weight: 100;
 
         }
         a {
         color: #2941AB;
         font-size: 14px;
-        padding: 16px 48px 18px;
+        padding: 16px 32px;
         margin: 16px auto 0;
         border-radius: 500px;
         background-color: #1ed760;
         text-decoration: none;
+        }
+
+        a:hover {
+        cursor: pointer;
         }
 
     }

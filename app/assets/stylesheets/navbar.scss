@@ -1,9 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     background: black;
     color: #ffffff;
     text-decoration: none;
     height: 80px;
 };
+
+
 
 .login-signup {
     background: black;
@@ -13,8 +19,30 @@ header {
     justify-content: space-between;
     margin-left: 135px;
     margin-right: 135px;
-    padding: 30px;
-    font-family: Helvetica, Arial, sans-serif, normal
+    // padding: 30px;
+
+    .navbarlogo {
+        display: inline-flex;
+        padding: 28px 17px;
+        font-size: 30px;
+        // font-weight: 100;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+        list-style: none;
+        font-size: 16px;
+        font-weight: 400;
+
+        li {
+            display: inline-block;
+            line-height: inherit;
+            letter-spacing: 0;
+            padding: 28px 17px;
+        }
+    }
 };
 
 .header-group {
@@ -26,7 +54,6 @@ header {
     margin-left: 135px;
     margin-right: 135px;
     padding: 15px;
-    font-family: Helvetica, Arial, sans-serif, normal
 
 };
 

@@ -8,14 +8,18 @@ const NavBar = ({ currentUser, logout }) => {
     const sessionLinks = () => (
         <header>
         <nav className="login-signup">
-            <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
-            <h4>Spotifina</h4>
-            <a href="https://www.linkedin.com/in/christian-wooddell/" id="navbarlink">Linkedin</a>
-            <a href="https://github.com/christianwooddell" id="navbarlink">Github</a>
-            <a href="" id="navbarlink">Portfolio</a>
-
-            <Link to="/login" id="navbarlink">Log in</Link>
-            <Link to="/signup" id="navbarlink">Sign up</Link>
+            <div href="/" className="navbarlogo">
+                <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
+                <h4>Spotifina</h4>
+            </div>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/christian-wooddell/" id="navbarlink">LinkedIn</a></li>
+                <li><a href="https://github.com/christianwooddell" id="navbarlink">Github</a></li>
+                <li><a href="/" id="navbarlink">Portfolio</a></li>
+                <li>|</li>
+                <li><Link to="/signup" id="navbarlink">Sign up</Link></li>
+                <li><Link to="/login" id="navbarlink">Log in</Link></li>
+            </ul>
         </nav>
         </header>
     );
