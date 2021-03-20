@@ -17999,3 +17999,16 @@ FOREIGN KEY ("blob_id")
   [1m[36mSong Create (1.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist_id", "album_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "my cool demo song"], ["artist_id", 2], ["album_id", 3], ["created_at", "2021-03-20 15:42:32.683434"], ["updated_at", "2021-03-20 15:42:32.683434"]]
   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2021-03-20 15:01:15 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/christian/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (25.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 194ms (Views: 176.5ms | ActiveRecord: 13.9ms)
+
+
