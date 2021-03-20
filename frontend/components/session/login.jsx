@@ -39,23 +39,32 @@ class Login extends React.Component{
                 </div>
                 <div>
                 <form className="login-form" onSubmit={this.handleSubmit}>
-                    <label>Email address</label>
+                    <div>
+                        <label>Email address</label>
+                    </div>
+                    <div>
                     <input type="text"
                         value={this.state.email}
                         placeholder="Email address"
                         onChange={this.handleInput("email")} />
-                    <label>Password</label>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                    </div>
+                    <div>
                     <input type="password"
                         value={this.state.password}
                         placeholder="Password"
                         onChange={this.handleInput("password")} />
+                    </div>
                     <button className="btn-login">LOG IN</button>
+                    
                     <h4>Don't have an account?</h4>
                     <Link to="/signup">SIGN UP FOR SPOTIFINA</Link>
                 </form>
             </div>
             </div>
-        )
+        );
     }
 
 }
