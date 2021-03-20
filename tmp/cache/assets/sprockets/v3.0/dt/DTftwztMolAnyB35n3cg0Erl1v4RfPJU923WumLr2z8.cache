@@ -1,0 +1,51 @@
+{:uriI"áfile://app/assets/javascripts/bundle.js.LICENSE.txt?type=text/plain&id=054688f3b19478b4a2ea32086fd91436b5597f32a599037adcbd5878314fe9fd:ET:load_pathI"app/assets/javascripts;T:filenameI"1app/assets/javascripts/bundle.js.LICENSE.txt;T:	nameI"bundle.js.LICENSE;T:logical_pathI"bundle.js.LICENSE.txt;T:content_typeI"text/plain;T:sourceI"∆/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!
+ * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+/** @license React v0.20.1
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.1
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.1
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"4processors:type=text/plain&file_type=text/plain;TTI"?file-digest://app/assets/javascripts/bundle.js.LICENSE.txt;TTF:charsetI"
+utf-8;F:digest"%∏ÇDØèû¥ÁwñgIµ’JgÉÔøCÊä;q&e«:lengthi∆:dependencies_digest"%∫L…¶PB(\°zìV´ÿHXÇÆÈÂﬁ;	∂H©O‘ä:idI"E054688f3b19478b4a2ea32086fd91436b5597f32a599037adcbd5878314fe9fd;F:
+mtimel+ï˘U`
