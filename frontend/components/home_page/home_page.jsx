@@ -7,7 +7,7 @@ import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 
 const HomePage = ({ currentUser, logout }) => {
     const personalGreeting = () => (
-        <header>
+        <header className="homepage">
            
                 <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
                 <h4>Spotifina</h4>
