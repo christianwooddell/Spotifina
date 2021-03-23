@@ -1,4 +1,5 @@
 import React from "react";
+import { fetchSongs } from "../../util/song_api_util";
 
 
 class NowPlaying extends React.Component {
@@ -19,11 +20,13 @@ class NowPlaying extends React.Component {
 
 
     render() {
-        const { currentSong } = this.props;
-        const {audio_url} = currentSong;
+        // const { currentSong } = this.props;
+        // const {audio_url} = currentSong;
         return (
             <div className="nowplayingcontainer">
-                <audio controls id="nowplayingplayer" ref={this.controls} src={audio_url}/>
+                <audio controls className="nowplaying">
+                    <source src="https://www.computerhope.com/jargon/m/example.mp3" type="audio/mpeg" />
+                </audio>
             </div>
         )
     }

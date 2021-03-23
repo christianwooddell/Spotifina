@@ -1,16 +1,13 @@
-// import { connect } from "react-redux";
-// import NowPlaying from "./now_playing";
-// import { playCurrentSong } from "../../actions/player_actions";
+import { connect } from "react-redux";
+import NowPlaying from "./now_playing";
+import { getSong } from "../../actions/song_actions";
 
-// const mapStateToProps = state => {
-//     let currentSong = state.nowPlaying.currentSong;
-//     return {
-//         currentSong
-//     }
-// };
+const mapStateToProps = state => ({
+    songs: state.songs
+});
 
-// const mapDispatchToProps = dispatch => ({
-//     playCurrentSong: songId => dispatch(playCurrentSong(songId)),
-// });
+const mapDispatchToProps = dispatch => ({
+    getSong: songId => dispatch(getSong(songId)),
+});
 
-// export default connect(mapStateToProps, mapDispatchToProps)(NowPlaying);
+export default connect(mapStateToProps, mapDispatchToProps)(NowPlaying);
