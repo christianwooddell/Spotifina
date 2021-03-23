@@ -23,7 +23,7 @@ class NowPlaying extends React.Component {
         // const {audio_url} = currentSong;
         return (
             <div className="nowplayingcontainer">
-                <audio controls id="nowplayingplayer" ref={this.controls} src="https://www.computerhope.com/jargon/m/example.mp3"/>
+                <audio controls id="nowplayingplayer" ref={this.controls} src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"/>
             </div>
         )
     }
