@@ -3,7 +3,8 @@ import { getSong } from "../../actions/song_actions";
 import { fetchSongs } from "../../util/song_api_util";
 import { currentSong } from "./now_playing_container";
 import { playCurrentSong } from "../../actions/player_actions"
-
+///
+import {GrPlayFill} from "react-icons/gr"
 
 class NowPlaying extends React.Component {
     constructor(props){
@@ -57,7 +58,9 @@ class NowPlaying extends React.Component {
         return (
             <div className="nowplayingcontainer">
                 <div>
-                    <button className="play" onClick={this.togglePlay}>play</button>
+                    <button className="play" onClick={this.togglePlay}>
+                        <GrPlayFill />
+                    </button>
                 </div>
                     <audio ref={this.controls} className="nowplaying" src={window.audiourl} />
             </div>

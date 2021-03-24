@@ -1,5 +1,5 @@
 .login-container {
-     font-size: 14px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     padding: 40px 0px 32px;
@@ -28,9 +28,16 @@
         color: rgb(255, 255, 255);
 
     }
-    #signuplinkcontainer {
+    
+}
+#comeonin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ #signuplinkcontainer {
         cursor: pointer;
-        justify-content: center;
         text-decoration: none;
         border: 5px;
         width: 200px;
@@ -42,10 +49,7 @@
         padding: 17px 48px;
         background-color: rgb(29, 185, 84);
         color: rgb(255, 255, 255);
+        margin-left: 43.2%;
 
     }
 
-   
-
-    
-}

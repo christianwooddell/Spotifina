@@ -37,38 +37,37 @@ class Login extends React.Component{
                     <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
                     <h4>Spotifina</h4>
                 </div>
-                <div>
+                <div className="comeonin">
                 <form className="login-form" onSubmit={this.handleSubmit}>
                     <div>
                         <label>Email address</label>
                     </div>
                     <div>
-                    <input type="text"
-                        value={this.state.email}
-                        placeholder="Email address"
-                        onChange={this.handleInput("email")} />
+                        <input type="text"
+                            value={this.state.email}
+                            placeholder="Email address"
+                            onChange={this.handleInput("email")} />
                     </div>
                     <div>
                         <label>Password</label>
                     </div>
                     <div>
-                    <input type="password"
-                        value={this.state.password}
-                        placeholder="Password"
-                        onChange={this.handleInput("password")} />
+                        <input type="password"
+                            value={this.state.password}
+                            placeholder="Password"
+                            onChange={this.handleInput("password")} />
                     </div>
                     <div id="btnlogincontainer">
                         <button className="btn-login">LOG IN</button>
                     </div>
                     <h4>Don't have an account?</h4>
-
-                    <div>
-                        <div id="signuplinkcontainer">
-                            <Link to="/signup">SIGN UP FOR SPOTIFINA</Link>
-                        </div>
-                    </div>
+                
                 </form>
+                  
             </div>
+                <div id="signuplinkcontainer">
+                        <Link to="/signup">SIGN UP FOR SPOTIFINA</Link>
+                </div>
             </div>
         );
     }
