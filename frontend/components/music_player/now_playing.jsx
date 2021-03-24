@@ -9,15 +9,16 @@ class NowPlaying extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            // playStatus: true,
+            playStatus: true,
             // muted: false,
             // currentTime = 0,
             // volume = 50
 
         }
+        this.controls = React.createRef();
         // this.playAudio = this.playAudio.bind(this);
         // this.updateTime = this.updateTime.bind(this);
-        // this.togglePlay = this.togglePlay.bind(this);
+        this.togglePlay = this.togglePlay.bind(this);
 
     }
 
@@ -31,25 +32,15 @@ class NowPlaying extends React.Component {
     //     this.setState({ currentTime: timestamp });
     // }
 
-    // togglePlay() {
-    //     let playing = this.state.playStatus;
-    //     let audio = this.controls.current;
-
-    //     if (!this.props.currentSong) {
-    //         playing = true;
-    //         this.setState({ playStatus: playing });
-    //         return;
-    //     }
-
-    //     if (playing === true) {
-    //         playing = false;
-    //         this.playAudio();
-    //     } else {
-    //         playing = true;
-    //         audio.pause();
-    //     }
-    //     this.setState({ playStatus: playing })
-    // }
+    togglePlay() {
+        if (this.state.playStatus){
+            this.controls.current.pause();
+            this.setState({playStatus: false});
+        } else {
+            this.controls.current.play();
+            this.setState({playStatus: true});
+        }
+    }
 
     // playAudio() {
     //     let audio = this.controls.current;
@@ -65,10 +56,10 @@ class NowPlaying extends React.Component {
         // const { audio_url } = currentSong;
         return (
             <div className="nowplayingcontainer">
-                <audio controls className="nowplaying">
-                    <source src={window.audiourl} />
-                </audio>
-
+                <div>
+                    <button className="play" onClick={this.togglePlay}>play</button>
+                </div>
+                    <audio ref={this.controls} className="nowplaying" src={window.audiourl} />
             </div>
         )
     }
