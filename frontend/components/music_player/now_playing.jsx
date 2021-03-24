@@ -47,7 +47,7 @@ class NowPlaying extends React.Component {
     //     let playing = false;
     //     audio.play();
         
-    //     this.setState({ playStatus: playing })
+    //     this.setState({ playStatus: true })
     // }
 
 

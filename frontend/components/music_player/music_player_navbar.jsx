@@ -35,7 +35,7 @@ class MusicPlayerNavBar extends React.Component {
                         <li>|</li>
                         <div className="dropdownitems">
                             <button onClick={dropDownButton} className="dropdownbtn">Profile</button>
-                                <div id="myDropdown" className="dropdown-content">
+                            <div id="myDropdown" className="dropdown-content">
                             </div>
                         </div>
                     </ul>

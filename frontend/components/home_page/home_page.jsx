@@ -10,10 +10,10 @@ const HomePage = ({ currentUser, logout }) => {
     const personalGreeting = () => (
         <div>
             <header className="homepage">
-                    <MusicPlayerNavBar />
-                    
-                    <button className="header-button" onClick={logout}>Log Out</button>
-                    
+                <MusicPlayerNavBar />
+
+                <button className="header-button" onClick={logout}>Log Out</button>
+
             </header>
             <footer>
                 <NowPlaying />
@@ -24,7 +24,7 @@ const HomePage = ({ currentUser, logout }) => {
 
     return personalGreeting();
 
-    
+
 
 
 }
