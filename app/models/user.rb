@@ -1,3 +1,4 @@
+require "bcrypt"
 class User < ApplicationRecord
     validates :username, :dob_day, :dob_month, :dob_year, :session_token, :password_digest, presence: true 
     validates :password, length: {minimum: 8, allow_nil: true}

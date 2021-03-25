@@ -5,7 +5,7 @@ class Api::UsersController < ApplicationController
             login!(@user)
             render :show #render homepage is user is logged in
         else 
-            render json: @user.errors.full_messages, status: 422 #text "log in" is link to login page
+            render json: @user.errors.full_messages, status: 422 
         end 
     end 
 
