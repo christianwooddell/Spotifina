@@ -18,11 +18,22 @@ class Signup extends React.Component{
             dob_year: "", 
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.loginDemo = this.loginDemo.bind(this);
+    }
+
+    loginDemo(e) {
+        const demoUser = {
+            email: "demo@gmail.com",
+            password: "password"
+        }
+        this.props.login(demoUser)
+            .then(() => this.props.history.push("/home"));
     }
 
     componentWillUnmount() {
         this.props.clearSessionErrors();
     }
+
 
     renderErrors() {
         return (
@@ -56,6 +67,7 @@ class Signup extends React.Component{
                     </div>
                 </a>
                 <h3>Sign up for free to start listening.</h3>
+                <a className="demologin" onClick={() => this.loginDemo()}>DEMO LOGIN</a>
                 <form>
                     <div className="inputbox">
                         <div>

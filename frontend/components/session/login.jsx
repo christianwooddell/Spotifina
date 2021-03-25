@@ -12,6 +12,16 @@ class Login extends React.Component{
             password: ""
         }
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.loginDemo = this.loginDemo.bind(this);
+    }
+
+    loginDemo(e) {
+        const demoUser = {
+            email: "demo@gmail.com",
+            password: "password"
+        }
+        this.props.login(demoUser)
+            .then(()=> this.props.history.push("/home"));
     }
 
     
@@ -55,6 +65,7 @@ class Login extends React.Component{
                     </div>
                 </a>
                 <div className="comeonin">
+                <a className="demologin" onClick={() => this.loginDemo()}>DEMO LOGIN</a>
                 <form className="login-form" onSubmit={this.handleSubmit}>
                     <div>
                         <label>Email address</label>
