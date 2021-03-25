@@ -63,6 +63,7 @@ class Signup extends React.Component{
                 <a href="/">
                     <div className="spotifinalogo" id="spotifinalogotop">
                         <FontAwesomeIcon icon={faSpotify} className="spotify-logo" />
+                        
                         <h4>Spotifina</h4>
                     </div>
                 </a>
