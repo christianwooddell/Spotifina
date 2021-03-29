@@ -57,6 +57,7 @@ class Login extends React.Component{
 
     render() {
         return (
+            <div>
             <div className="login-container">
                 <a href="/">
                     <div className="spotifinalogo" id="spotifinalogotop">
@@ -89,13 +90,12 @@ class Login extends React.Component{
                         <button className="btn-login">LOG IN</button>
                     </div>
                     {this.renderErrors()}
-                    <h4>Don't have an account?</h4>
-                
+                    <h4>Don't have an account?</h4> 
                 </form>
-                  
+            </div>
             </div>
                 <div id="signuplinkcontainer">
-                        <Link to="/signup">SIGN UP FOR SPOTIFINA</Link>
+                    <a href="/#/signup">SIGN UP FOR SPOTIFINA</a> 
                 </div>
             </div>
         );
