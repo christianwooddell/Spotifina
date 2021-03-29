@@ -10,11 +10,11 @@ const HomePage = ({ currentUser, logout }) => {
     const personalGreeting = () => (
         <div>
             <header className="homepage">
-                <MusicPlayerNavBar />
-
-                <button className="header-button" onClick={logout}>Log Out</button>
+                {/* <MusicPlayerNavBar /> */}
 
             </header>
+                <button className="header-button" onClick={logout}>Log Out</button>
+
             <footer>
                 <NowPlaying />
             </footer>
