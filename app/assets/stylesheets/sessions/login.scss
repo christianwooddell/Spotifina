@@ -27,6 +27,7 @@
         background-color: rgb(29, 185, 84);
         color: rgb(255, 255, 255);
 
+
     }
     
 }
@@ -39,7 +40,7 @@
  #signuplinkcontainer {
         cursor: pointer;
         text-align: center;
-        border: 2px solid rgb(141, 137, 137) !important;
+        border: 2px solid #616467 !important;
         width: 450px;
         margin: 20px;
         font-weight: bold;
@@ -48,10 +49,25 @@
         letter-spacing: 2px;
         padding: 17px 48px;
         background-color: white;
-        color: rgb(255, 255, 255);
 
     }
 
+    #signuplinkcontainer:hover {
+        background-color: #616467;
+        transition-duration: .3s;
+    }
+
+    
+    
+    .btn-login:hover {
+        cursor: pointer;
+        background-color: #39e475;
+        transform: scale(1.05);
+        transition-duration: .3s;
+
+    }
+    
+    
     #spotifinalogotop {
         color: black;
 
@@ -60,11 +76,3 @@
             top: -8px;
         }
     }
-
-
-.btn-login:hover {
-    cursor: pointer;
-    background-color: #39e475;
-    transform: scale(1.05);
-}
-
