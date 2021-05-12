@@ -113,7 +113,7 @@ class Signup extends React.Component{
                             <label className="choiceunit">Month</label>
                             <div className="month">
                                 <select id="register-dob_month" onChange={this.handleInput("dob_month")}>
-                                    <option value defaultValue>Month</option>
+                                    <option value defaultValue selected="true" disabled="disabled">Month</option>
                                     <option value="01">January</option>
                                     <option value="02">February</option>
                                     <option value="03">March</option>
