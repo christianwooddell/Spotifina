@@ -169,7 +169,7 @@ class Signup extends React.Component{
 
 
                 <h4 className="not-new-user">Have an account?
-                        <Link to="/login" className="login-link">Log in.</Link>
+                        <Link to="/login" className="login-link"> Log in.</Link>
                 </h4>
 
             </div>
