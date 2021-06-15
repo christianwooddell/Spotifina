@@ -12,7 +12,8 @@ import { getSong } from "../../actions/song_actions";
 
 const mapStateToProps = state => ({
     currentUser: state.entities.users[state.session.currentUser],
-    songs: state.session.currentSong
+    songs: state.entities.songs
+    // currentSong: state.session.currentSong
 });
 
 const mapDispatchToProps = dispatch => ({
