@@ -28746,3 +28746,39 @@ Redirected to https://spotifina-dev.s3.amazonaws.com/GDRa27oeepSZFtEa1aGNNU5E?re
 Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
 
 
+  [1m[36mSong Load (5.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mAlbum Load (2.2ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mSong Load (110.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mSong Load (11.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" ORDER BY "songs"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" ORDER BY "songs"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" ORDER BY "songs"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (1.0ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtist Load (3.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (3.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Create (14.0ms)[0m  [1m[32mINSERT INTO "artists" ("id", "name", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 3], ["name", "VTSS"], ["bio", "Initially emerging as a key figure in the radical underground Polish club scene, the past few years have seen VTSS easily establish herself as one of the most vital, uncompromising and visible new talents in techno."], ["created_at", "2021-06-24 21:39:21.220173"], ["updated_at", "2021-06-24 21:39:21.220173"]]
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSong Create (3.4ms)[0m  [1m[32mINSERT INTO "songs" ("id", "title", "artist_id", "album_id", "created_at", "updated_at", "duration") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["id", 3], ["title", "Atlantyda"], ["artist_id", 3], ["album_id", 2], ["created_at", "2021-06-24 21:39:30.406958"], ["updated_at", "2021-06-24 21:39:30.406958"], ["duration", "6:36"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Attachment Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Song"], ["name", "audio_file"], ["LIMIT", 1]]
+[36m  S3 Storage (1494.0ms) [0m[32mUploaded file to key: 12gZyGCZcCfo2EWZCc8EeKfi (checksum: 5vjUG9m9ojqQNSibQ0fEEw==)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Blob Create (6.0ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "12gZyGCZcCfo2EWZCc8EeKfi"], ["filename", "atlantyda.mp3"], ["content_type", "audio/mpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 15904992], ["checksum", "5vjUG9m9ojqQNSibQ0fEEw=="], ["created_at", "2021-06-24 21:41:54.600835"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Create (5.9ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "audio_file"], ["record_type", "Song"], ["record_id", 3], ["blob_id", 3], ["created_at", "2021-06-24 21:41:54.631098"]]
+  [1m[36mSong Update (2.5ms)[0m  [1m[33mUPDATE "songs" SET "updated_at" = $1 WHERE "songs"."id" = $2[0m  [["updated_at", "2021-06-24 21:41:54.638523"], ["id", 3]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 04ca179b-32df-4617-9db7-e1892e442590) to Async(default) with arguments: #<GlobalID:0x00007fc84cc9b028 @uri=#<URI::GID gid://spotifina/ActiveStorage::Blob/3>>
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [04ca179b-32df-4617-9db7-e1892e442590] Performing ActiveStorage::AnalyzeJob (Job ID: 04ca179b-32df-4617-9db7-e1892e442590) from Async(default) with arguments: #<GlobalID:0x00007fc84cc5a938 @uri=#<URI::GID gid://spotifina/ActiveStorage::Blob/3>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [04ca179b-32df-4617-9db7-e1892e442590]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [04ca179b-32df-4617-9db7-e1892e442590]   [1m[36mActiveStorage::Blob Update (0.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 3]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [04ca179b-32df-4617-9db7-e1892e442590]   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [04ca179b-32df-4617-9db7-e1892e442590] Performed ActiveStorage::AnalyzeJob (Job ID: 04ca179b-32df-4617-9db7-e1892e442590) from Async(default) in 4.58ms
