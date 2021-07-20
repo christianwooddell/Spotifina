@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import NowPlaying from "./now_playing";
-import { getSong } from "../../actions/song_actions";
+import { getSongs } from "../../actions/song_actions";
 
 // const mapStateToProps = state => {
 //     let currentSong = state.nowPlaying.currentSong;
@@ -17,7 +17,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    getSong: songId => dispatch(getSong(songId)),
+    getSongs: () => dispatch(getSongs()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(NowPlaying);

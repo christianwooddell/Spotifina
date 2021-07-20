@@ -10,6 +10,7 @@ class NowPlaying extends React.Component {
         super(props);
         this.state = {
             playStatus: true,
+            currentSong: 1,
             // muted: false,
             // currentTime = 0,
             // volume = 50
@@ -19,13 +20,14 @@ class NowPlaying extends React.Component {
         // this.playAudio = this.playAudio.bind(this);
         // this.updateTime = this.updateTime.bind(this);
         this.togglePlay = this.togglePlay.bind(this);
+        this.nextSong = this.nextSong.bind(this);
 
     }
 
     // componentDidUpdate
 
     componentDidMount() {
-        this.props.getSong(2)
+        this.props.getSongs()
     }
 
     // playAudio() {
@@ -46,6 +48,11 @@ class NowPlaying extends React.Component {
         }
     }
 
+    nextSong() {
+        let nextSong = this.state.currentSong + 1
+        this.setState({currentSong: nextSong})
+    }
+
     // playAudio() {
     //     let audio = this.controls.current;
     //     let playing = false;
@@ -58,15 +65,19 @@ class NowPlaying extends React.Component {
     render() {
         // const { currentSong } = this.props;
         // const { audio_url } = currentSong;
-        if (!this.props.songs[2]) return null;
+        debugger
+        if (!this.props.songs[this.state.currentSong]) return null;
         return (
             <div id="nowplayingcontainer">
                 <div>
                     <button className="play" onClick={this.togglePlay}>
                         <GrPlayFill />
                     </button>
+                    <button className="nextsong" onClick={this.nextSong}>
+                        next
+                    </button>
                 </div>
-                    <audio ref={this.controls} className="nowplaying" src={this.props.songs[2].audio_url} />
+                    <audio ref={this.controls} className="nowplaying" src={this.props.songs[this.state.currentSong].audio_url} />
             </div>
         )
     }
