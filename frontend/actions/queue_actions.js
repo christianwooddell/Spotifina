@@ -1,7 +1,7 @@
 import { RECEIVE_ALL_SONGS } from "./song_actions";
 
 export const NEXT_UP = "NEXT_UP";
-export const PREVIOUS_SONG = "PREVIOUS_SONG";
+export const PREVIOUS_UP = "PREVIOUS_UP";
 // export const GET_SONG_LIST = "GET_SONG_LIST";
 
 export const nextUp = numIndex => ({
@@ -9,8 +9,8 @@ export const nextUp = numIndex => ({
     songIndex
 });
 
-export const previousSong = numIndex => ({
-    type: PREVIOUS_SONG,
+export const previousUp = numIndex => ({
+    type: PREVIOUS_UP,
     songIndex
 });
 

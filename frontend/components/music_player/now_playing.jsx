@@ -3,8 +3,8 @@ import { getSong } from "../../actions/song_actions";
 import { fetchSongs } from "../../util/song_api_util";
 import { currentSong } from "./now_playing_container";
 import { playCurrentSong } from "../../actions/player_actions"
-import { nextUp, previousSong } from "../../actions/queue_actions";
-import { GrPlayFill, GrChapterNext } from "react-icons/gr"
+import { nextUp, previousUp } from "../../actions/queue_actions";
+import { GrPlayFill, GrChapterNext, GrChapterPrevious } from "react-icons/gr"
 
 class NowPlaying extends React.Component {
     constructor(props) {
@@ -22,6 +22,7 @@ class NowPlaying extends React.Component {
         // this.updateTime = this.updateTime.bind(this);
         this.togglePlay = this.togglePlay.bind(this);
         this.nextSong = this.nextSong.bind(this);
+        this.previousSong = this.previousSong.bind(this);
 
     }
 
@@ -57,6 +58,16 @@ class NowPlaying extends React.Component {
         this.setState({ playStatus: false });
     }
 
+    previousSong() {
+        // smth to loop the songs
+        let previousSong = this.state.currentSong - 1
+        this.setState({ currentSong: previousSong })
+        // this.controls.current.play();
+        this.setState({ playStatus: false });
+    }
+
+
+
 
 
     // playAudio() {
@@ -71,11 +82,14 @@ class NowPlaying extends React.Component {
     render() {
         // const { currentSong } = this.props;
         // const { audio_url } = currentSong;
-        debugger
+        // debugger
         if (!this.props.songs[this.state.currentSong]) return null;
         return (
             <div id="nowplayingcontainer">
                 <div>
+                    <button className="previoussong" onClick={this.previousSong}>
+                        <GrChapterPrevious />
+                    </button>
                     <button className="play" onClick={this.togglePlay}>
                         <GrPlayFill />
                     </button>
