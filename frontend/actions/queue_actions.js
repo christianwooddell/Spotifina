@@ -6,12 +6,12 @@ export const PREVIOUS_SONG = "PREVIOUS_SONG";
 
 export const nextSong = numIndex => ({
     type: NEXT_SONG,
-    numIndex
+    songIndex
 });
 
 export const previousSong = numIndex => ({
     type: PREVIOUS_SONG,
-    numIndex
+    songIndex
 });
 
 

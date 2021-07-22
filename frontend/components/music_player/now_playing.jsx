@@ -3,7 +3,8 @@ import { getSong } from "../../actions/song_actions";
 import { fetchSongs } from "../../util/song_api_util";
 import { currentSong } from "./now_playing_container";
 import { playCurrentSong } from "../../actions/player_actions"
-import {GrPlayFill} from "react-icons/gr"
+import { nextSong, previousSong } from "../../actions/queue_actions";
+import {GrPlayFill, GrChapterNext} from "react-icons/gr"
 
 class NowPlaying extends React.Component {
     constructor(props){
@@ -77,7 +78,7 @@ class NowPlaying extends React.Component {
                         <GrPlayFill />
                     </button>
                     <button className="nextsong" onClick={this.nextSong}>
-                        next song
+                        <GrChapterNext />
                     </button>
                    
                 </div>
