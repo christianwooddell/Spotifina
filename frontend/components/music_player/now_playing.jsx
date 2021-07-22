@@ -66,6 +66,8 @@ class NowPlaying extends React.Component {
         this.setState({ playStatus: false });
     }
 
+    
+
 
 
 
